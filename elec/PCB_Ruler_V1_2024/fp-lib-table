@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "digikey-footprints")(type "KiCad")(uri "${KIPRJMOD}/Libraries/digikey-footprints.pretty")(options "")(descr ""))
+  (lib (name "ESP32_C3_WROOM_02_H4")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Esp32-C3/ESP32_C3_WROOM_02_H4")(options "")(descr ""))
+)
