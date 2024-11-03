@@ -845,6 +845,50 @@
 		)
 		(uuid "ef29711a-22c5-4d4b-be03-9b3749209dfe")
 	)
+	(global_label "SDA"
+		(shape input)
+		(at 113.03 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d8129092-22f3-4138-b90d-39725fd35dd4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 119.5833 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 113.03 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f1dddbe2-24a9-489b-ae1d-f0c3a175302f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 119.5228 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "ICM-42670-P:ICM-42670-P")
 		(at 77.47 67.31 0)
@@ -982,7 +1026,7 @@
 			(uuid "200c7c38-e2ee-417a-9a54-1cf8f8de4048")
 		)
 		(instances
-			(project ""
+			(project "PCB_Ruler_V1_2024"
 				(path "/e39575e5-bba1-47dc-9ccf-32a84e6da237/ca7d0597-655a-4aee-bb72-0094cc7418df"
 					(reference "MT1")
 					(unit 1)
@@ -1114,7 +1158,7 @@
 			(uuid "aaf866f9-3142-4e1d-b139-1f4d0bc68f14")
 		)
 		(instances
-			(project ""
+			(project "PCB_Ruler_V1_2024"
 				(path "/e39575e5-bba1-47dc-9ccf-32a84e6da237/ca7d0597-655a-4aee-bb72-0094cc7418df"
 					(reference "#PWR04")
 					(unit 1)
@@ -1319,7 +1363,7 @@
 			(uuid "e8a0d65d-e343-4a20-99af-35a72e43b56a")
 		)
 		(instances
-			(project ""
+			(project "PCB_Ruler_V1_2024"
 				(path "/e39575e5-bba1-47dc-9ccf-32a84e6da237/ca7d0597-655a-4aee-bb72-0094cc7418df"
 					(reference "C1")
 					(unit 1)
@@ -1520,7 +1564,7 @@
 			(uuid "e181368c-b449-43bb-b754-7b82cbcea324")
 		)
 		(instances
-			(project ""
+			(project "PCB_Ruler_V1_2024"
 				(path "/e39575e5-bba1-47dc-9ccf-32a84e6da237/ca7d0597-655a-4aee-bb72-0094cc7418df"
 					(reference "#PWR02")
 					(unit 1)
