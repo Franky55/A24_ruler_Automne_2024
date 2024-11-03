@@ -433,6 +433,182 @@
 				)
 			)
 		)
+		(symbol "Regulator_Linear:TLV75533PDBV"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TLV75533PDBV"
+				(at 0 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 8.255 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv755p.pdf"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LDO Regulator Fixed Positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TLV75533PDBV_0_1"
+				(rectangle
+					(start -5.08 4.445)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TLV75533PDBV_1_1"
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 0 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "dk_PMIC-Battery-Chargers:MCP73831T-2ACI_OT"
 			(pin_names
 				(offset 1.016)
@@ -944,7 +1120,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 46.99) (xy 176.53 46.99)
+			(xy 139.7 53.34) (xy 147.32 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1014,7 +1190,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 57.15) (xy 176.53 58.42)
+			(xy 147.32 63.5) (xy 147.32 64.77)
 		)
 		(stroke
 			(width 0)
@@ -1044,7 +1220,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 46.99) (xy 176.53 49.53)
+			(xy 147.32 53.34) (xy 147.32 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1106,7 +1282,7 @@
 	)
 	(global_label "Vbat+"
 		(shape input)
-		(at 168.91 46.99 180)
+		(at 139.7 53.34 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1116,7 +1292,7 @@
 		)
 		(uuid "ac36ca4b-366c-4a4f-bea0-76921e10c189")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 160.2401 46.99 0)
+			(at 131.0301 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1128,7 +1304,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 176.53 53.34 0)
+		(at 147.32 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1137,7 +1313,7 @@
 		(fields_autoplaced yes)
 		(uuid "462fa51d-2475-460b-b4ae-9513794dfbca")
 		(property "Reference" "C5"
-			(at 180.34 52.0699 0)
+			(at 151.13 58.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1146,7 +1322,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 180.34 54.6099 0)
+			(at 151.13 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1155,7 +1331,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.4952 57.15 0)
+			(at 148.2852 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1164,7 +1340,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 176.53 53.34 0)
+			(at 147.32 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1173,7 +1349,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 176.53 53.34 0)
+			(at 147.32 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1559,6 +1735,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:TLV75533PDBV")
+		(at 199.39 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88372dbb-2711-497b-b6c8-6cc5d113ce0c")
+		(property "Reference" "U3"
+			(at 199.39 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV75533PDBV"
+			(at 199.39 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 199.39 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv755p.pdf"
+			(at 199.39 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+			(at 199.39 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f36525b8-7ee5-4962-a0ad-55010854036c")
+		)
+		(pin "5"
+			(uuid "27f745c6-a0b9-48b4-85e7-5c698b24d7c5")
+		)
+		(pin "1"
+			(uuid "5a517a4f-fc78-4b74-9b71-948d49ffd21d")
+		)
+		(pin "4"
+			(uuid "386a6e34-2002-4379-b26a-556c7fff3b1c")
+		)
+		(pin "3"
+			(uuid "786bfc3a-ec4d-47a3-87c0-8f6223797068")
+		)
+		(instances
+			(project "PCB_Ruler_V1_2024"
+				(path "/e39575e5-bba1-47dc-9ccf-32a84e6da237/4bf8cdd1-6def-4ef5-937e-6e175da6cdd6"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED_Small")
 		(at 80.01 54.61 180)
 		(unit 1)
@@ -1899,7 +2153,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 176.53 58.42 0)
+		(at 147.32 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1908,7 +2162,7 @@
 		(fields_autoplaced yes)
 		(uuid "f1376292-187a-4edf-b3d8-8cf3ce9bc6c5")
 		(property "Reference" "#PWR016"
-			(at 176.53 64.77 0)
+			(at 147.32 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1917,7 +2171,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 176.53 63.5 0)
+			(at 147.32 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1925,7 +2179,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 176.53 58.42 0)
+			(at 147.32 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1934,7 +2188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 58.42 0)
+			(at 147.32 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1943,7 +2197,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 176.53 58.42 0)
+			(at 147.32 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
