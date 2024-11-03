@@ -4,4 +4,5 @@
   (lib (name "ESP32_C3_WROOM_02_H4")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Esp32-C3/ESP32_C3_WROOM_02_H4")(options "")(descr ""))
   (lib (name "IMU")(type "KiCad")(uri "${KIPRJMOD}/Libraries/IMU")(options "")(descr ""))
   (lib (name "MCP73831T")(type "KiCad")(uri "${KIPRJMOD}/Libraries/MCP73831T_2ACI_OT/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "VL53L4CXV0DH/1")(type "KiCad")(uri "${KIPRJMOD}/Libraries/laser/KiCADv6/footprints.pretty")(options "")(descr ""))
 )

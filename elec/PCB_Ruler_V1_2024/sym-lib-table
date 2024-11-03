@@ -115,4 +115,5 @@
   (lib (name "ICM-42670-P")(type "KiCad")(uri "${KIPRJMOD}/Libraries/IMU/ICM-42670-P.kicad_sym")(options "")(descr ""))
   (lib (name "ConnectorScreen")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ConnectorScreen/ConnectorScreen.kicad_sym")(options "")(descr ""))
   (lib (name "MCP73831T")(type "KiCad")(uri "${KIPRJMOD}/Libraries/MCP73831T_2ACI_OT/KiCADv6/2024-11-03_03-36-53.kicad_sym")(options "")(descr ""))
+  (lib (name "VL53L4CXV0DH/1")(type "KiCad")(uri "${KIPRJMOD}/Libraries/laser/KiCADv6/2024-11-03_22-09-25.kicad_sym")(options "")(descr ""))
 )

@@ -1820,6 +1820,30 @@
 			)
 		)
 	)
+	(global_label "XSHUT"
+		(shape input)
+		(at 34.29 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right)
+		)
+		(uuid "3c5a3190-683f-4fa8-85c8-bf49edfbd617")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 24.7812 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SCL"
 		(shape input)
 		(at 129.54 74.93 0)
