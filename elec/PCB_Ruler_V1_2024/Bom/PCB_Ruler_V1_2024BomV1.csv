@@ -1,29 +1,29 @@
-"Reference","Value","Datasheet","Footprint","Qty","DNP"
-"C1,C2,C5,C6,C12,C13","1uF","~","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","6",""
-"C3,C4","4.7uF","~","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","2",""
-"C7","10nF","~","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","1",""
-"C8","0.1uF","~","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","1",""
-"C9","2.2uF","~","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","1",""
-"C10","100nF","~","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","1",""
-"C11","4.7 uF","~","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","1",""
-"D1,D2","D_Zener","~","Diode_SMD:D_SOD-923","2",""
-"D3","LED_Small","~","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","1",""
-"J1","USB-C","https://www.usb.org/sites/default/files/documents/usb_type-c.zip","Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV","1",""
-"J2","S2B-XH-A-1LFSN","S2B-XH-A-1LFSN","Connector_JST:JST_XH_S2B-XH-A-1_1x02_P2.50mm_Horizontal","1",""
-"J3","~","","Connector_FFC-FPC:Hirose_FH12-13S-0.5SH_1x13-1MP_P0.50mm_Horizontal","1",""
-"MT1","ICM-42670-P","","IMU:XDCR_ICM-42670-P","1",""
-"R1,R2","10K","~","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","2",""
-"R3,R4","5K1","~","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","2",""
-"R5","470","~","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","1",""
-"R6","2k","~","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","1",""
-"R7","100k","~","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","1",""
-"R8","300k","~","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","1",""
-"R9,R10,R11,R12,R13,R14,R15,R16,R17","10 k","~","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","9",""
-"R18","20 - 25 ohm","~","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","1",""
-"S1","JS202011JCQN","","JS202011JCQN:SW_JS202011JCQN","1",""
-"SW1,SW2,SW3,SW4,SW5,SW6,SW7","CS1213AGF260","CS1213AGF260","CS1213AGF260:SW_CS1213AGF260_CRS","7",""
-"U1","ESP32-C3-WROOM-02-H4","","ESP32_C3_WROOM_02_H4:MODULE_ESP32-C3-WROOM-02-H4","1",""
-"U2","MCP73831T-2ACI_OT","http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf","digikey-footprints:SOT-753","1",""
-"U3","TLV75533PDBV","http://www.ti.com/lit/ds/symlink/tlv755p.pdf","Package_TO_SOT_SMD:SOT-23-5","1",""
-"U4","TCA9534PWR","","TCA9534PWR:SOP65P640X120-16N","1",""
-"U5","VL53L4CXV0DH/1","VL53L4CXV0DH/1","VL53L4CXV0DH/1:LGA12_STM","1",""
+Reference,Value,Datasheet,Footprint,Qty,DNP
+"C1,C2,C5,C6,C12,C13",1uF,~,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,6,
+"C3,C4",4.7uF,~,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,2,
+C7,10nF,~,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1,
+C8,0.1uF,~,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1,
+C9,2.2uF,~,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1,
+C10,100nF,~,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1,
+C11,4.7 uF,~,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1,
+"D1,D2",D_Zener,~,Diode_SMD:D_SOD-923,2,
+D3,LED_Small,~,LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,1,
+J1,USB-C,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV,1,
+J2,S2B-XH-A-1LFSN,S2B-XH-A-1LFSN,Connector_JST:JST_XH_S2B-XH-A-1_1x02_P2.50mm_Horizontal,1,
+J3,~,,Connector_FFC-FPC:Hirose_FH12-13S-0.5SH_1x13-1MP_P0.50mm_Horizontal,1,
+MT1,ICM-42670-P,,IMU:XDCR_ICM-42670-P,1,
+"R1,R2",10K,~,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2,
+"R3,R4",5K1,~,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2,
+R5,470,~,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,
+R6,2k,~,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,
+R7,100k,~,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,
+R8,300k,~,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,
+"R9,R10,R11,R12,R13,R14,R15,R16,R17",10 k,~,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,9,
+R18,20 - 25 ohm,~,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,
+S1,JS202011JCQN,,JS202011JCQN:SW_JS202011JCQN,1,
+"SW1,SW2,SW3,SW4,SW5,SW6,SW7",CS1213AGF260,CS1213AGF260,CS1213AGF260:SW_CS1213AGF260_CRS,7,
+U1,ESP32-C3-WROOM-02-H4,,ESP32_C3_WROOM_02_H4:MODULE_ESP32-C3-WROOM-02-H4,1,
+U2,MCP73831T-2ACI_OT,http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf,digikey-footprints:SOT-753,1,
+U3,TLV75533PDBV,http://www.ti.com/lit/ds/symlink/tlv755p.pdf,Package_TO_SOT_SMD:SOT-23-5,1,
+U4,TCA9534PWR,,TCA9534PWR:SOP65P640X120-16N,1,
+U5,VL53L4CXV0DH/1,VL53L4CXV0DH/1,VL53L4CXV0DH/1:LGA12_STM,1,
