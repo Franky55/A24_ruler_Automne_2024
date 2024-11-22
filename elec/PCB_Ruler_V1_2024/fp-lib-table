@@ -10,4 +10,5 @@
   (lib (name "CS1213AGF260")(type "KiCad")(uri "${KIPRJMOD}/Libraries/CS1213AGF260/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "JS202011JAQN")(type "KiCad")(uri "${KIPRJMOD}/Libraries/JS202011JAQN/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "JS202011JCQN")(type "KiCad")(uri "${KIPRJMOD}/Libraries/JS202011JCQN")(options "")(descr ""))
+  (lib (name "Header2_1")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Header2_1")(options "")(descr ""))
 )

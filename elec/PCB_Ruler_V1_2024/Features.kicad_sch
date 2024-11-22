@@ -262,6 +262,256 @@
 				)
 			)
 		)
+		(symbol "Header2_1:6130XX11121_61300211121"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -5.08 -1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(property "Value" "61300211121"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Header2_1:61300211121"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ROWS" "Single"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "GENDER" "Pin Header"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MOUNT" "THT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "IR" "3A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PACKAGING" "Bag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PART-NUMBER" "61300211121"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "DATASHEET-URL" "https://www.we-online.com/redexpert/spec/61300211121?ae"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PITCH" "2.54mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PINS" "2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "TYPE" "Straight"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "6130XX11121_61300211121_0_0"
+				(rectangle
+					(start -3.81 -2.54)
+					(end 1.27 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -2.54 -1.27)
+					(radius 0.254)
+					(stroke
+						(width 0.635)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -1.27)
+					(radius 0.254)
+					(stroke
+						(width 0.635)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "ICM-42670-P:ICM-42670-P"
 			(pin_names
 				(offset 1.016)
@@ -1781,6 +2031,16 @@
 		)
 		(uuid "165df662-e85f-4cb5-9c49-714c3e45019f")
 	)
+	(polyline
+		(pts
+			(xy 254 166.37) (xy 254 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1807a265-c2a3-47c7-93ca-51ea962e298c")
+	)
 	(wire
 		(pts
 			(xy 246.38 115.57) (xy 247.65 115.57)
@@ -1830,6 +2090,26 @@
 			(type default)
 		)
 		(uuid "25ca2efa-34a3-4d8f-a99a-5d0a27140a1e")
+	)
+	(polyline
+		(pts
+			(xy 254 137.16) (xy 285.75 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2822e47f-f46a-4fa3-bb70-183f2a01a3f8")
+	)
+	(wire
+		(pts
+			(xy 267.97 154.94) (xy 269.24 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c8b44c4-28d1-4f23-bb35-b8bfd043f076")
 	)
 	(wire
 		(pts
@@ -1920,6 +2200,16 @@
 			(type default)
 		)
 		(uuid "50abdd4f-333d-4b78-9081-43983a260c59")
+	)
+	(wire
+		(pts
+			(xy 267.97 157.48) (xy 269.24 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5178f35b-1a2a-4fac-bf34-bd183517645e")
 	)
 	(wire
 		(pts
@@ -2583,6 +2873,20 @@
 		)
 		(uuid "d1040084-83e7-4fa0-8bdf-4b28e71ede79")
 	)
+	(text "EXTRA"
+		(exclude_from_sim no)
+		(at 269.24 145.542 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 2.54 2.54)
+				(thickness 2.54)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "e803634e-47a0-4fe5-ab05-3f93aca2c11a")
+	)
 	(text "PULL UP RESISTORS"
 		(exclude_from_sim no)
 		(at 229.362 27.432 0)
@@ -2632,6 +2936,28 @@
 		(uuid "0d93ae23-bbdb-466d-bd97-a22a3048b35e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 131.9976 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IO8"
+		(shape input)
+		(at 267.97 157.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1f5f4d1d-bbe2-4ee1-a78d-6bd5e561ba63")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 261.84 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2751,7 +3077,7 @@
 			)
 		)
 	)
-	(global_label "INT1_IMU"
+	(global_label "INT1_IMU{slash}RX"
 		(shape input)
 		(at 83.82 60.96 0)
 		(fields_autoplaced yes)
@@ -2763,7 +3089,7 @@
 		)
 		(uuid "4ac6df52-ec78-4fc4-bf81-2d4fd71959e7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.2719 60.96 0)
+			(at 99.0819 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2773,7 +3099,7 @@
 			)
 		)
 	)
-	(global_label "INT2_IMU"
+	(global_label "INT2_IMU{slash}TX"
 		(shape input)
 		(at 83.82 63.5 0)
 		(fields_autoplaced yes)
@@ -2785,7 +3111,7 @@
 		)
 		(uuid "521e30fc-806d-4258-b5cf-b15d7f681635")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.2719 63.5 0)
+			(at 98.7795 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3094,6 +3420,28 @@
 		(uuid "f3cc7d34-1730-44b3-b034-9496c69440f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 24.6524 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IO7"
+		(shape input)
+		(at 267.97 154.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f435d0c4-d5a2-4fe9-a296-a0e95872dbb8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 261.84 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3425,6 +3773,178 @@
 			(project "PCB_Ruler_V1_2024"
 				(path "/e39575e5-bba1-47dc-9ccf-32a84e6da237/ca7d0597-655a-4aee-bb72-0094cc7418df"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Header2_1:6130XX11121_61300211121")
+		(at 274.32 157.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "236c6bea-dcb7-4618-aa3e-0ba50f8f8df6")
+		(property "Reference" "J5"
+			(at 275.59 156.2099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "61300211121"
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Header2_1:61300211121"
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ROWS" "Single"
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "GENDER" "Pin Header"
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MOUNT" "THT"
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "IR" "3A"
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PACKAGING" "Bag"
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "61300211121"
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DATASHEET-URL" "https://www.we-online.com/redexpert/spec/61300211121?ae"
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PITCH" "2.54mm"
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PINS" "2"
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "TYPE" "Straight"
+			(at 274.32 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0735007e-3392-4a3c-996c-0846bfa2f7a3")
+		)
+		(pin "2"
+			(uuid "1703fbd9-7a30-4cd2-827b-52281d89fa2b")
+		)
+		(instances
+			(project ""
+				(path "/e39575e5-bba1-47dc-9ccf-32a84e6da237/ca7d0597-655a-4aee-bb72-0094cc7418df"
+					(reference "J5")
 					(unit 1)
 				)
 			)

@@ -121,4 +121,5 @@
   (lib (name "CS1213AGF260")(type "KiCad")(uri "${KIPRJMOD}/Libraries/CS1213AGF260/KiCADv6/2024-11-05_03-53-36.kicad_sym")(options "")(descr ""))
   (lib (name "JS202011JAQN")(type "KiCad")(uri "${KIPRJMOD}/Libraries/JS202011JAQN/KiCADv6/2024-11-05_04-33-16.kicad_sym")(options "")(descr ""))
   (lib (name "JS202011JCQN")(type "KiCad")(uri "${KIPRJMOD}/Libraries/JS202011JCQN/JS202011JCQN.kicad_sym")(options "")(descr ""))
+  (lib (name "Header2_1")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Header2_1/6130XX11121_61300211121.kicad_sym")(options "")(descr ""))
 )
