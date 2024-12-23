@@ -8,6 +8,7 @@
 #include "IMU.h"
 #include "IMU_Processus.h"
 #include "TCA9534.h"
+#include "IO_Expender.h"
 
 //Global variables
 extern IMU imu;

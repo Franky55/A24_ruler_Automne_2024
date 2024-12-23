@@ -1,7 +1,6 @@
 #include "main.h"
 
 
-
 #define LED_GPIO (gpio_num_t)20       // GPIO pin for the LED
 #define CONTROL_GPIO (gpio_num_t)21   // GPIO pin to be set to LOW
 
@@ -17,6 +16,7 @@ IMU imu;
 
 extern "C" void app_main(void)
 {
+    
     TimeBased timer;
     i2cdev_init();
     InitializeProcessus();
@@ -27,21 +27,16 @@ extern "C" void app_main(void)
     imu.Initialize();
 
     
-    TCA9534_IO_EXP io_expWrite;
-    io_expWrite.I2C_ADDR = 0x64;
-    io_expWrite.i2c_master_port = I2C_NUM_0;
-    TCA9534_IO_EXP io_expRead;
-    io_expRead.I2C_ADDR = 0x65;
-    io_expRead.i2c_master_port = I2C_NUM_0;
+    IO_Expender IO1(0x20);
 
-    set_all_tca9534_io_pins_direction(&io_expWrite, TCA9534_INPUT);
-    
-    
-    
+    IO1.i2c_master_init();
+
+    IO1.set_pin_direction(TCA9534_IO2, TCA9534_INPUT);
 
     while(1)
     {
-        int16_t allButtons = get_tca9534_all_io_pin_input_status(&io_expRead);
+        
+        int16_t allButtons = IO1.get_pin_status(TCA9534_IO2);
         
         ESP_LOGI("IO extender", "all inputs: %d", allButtons);
         vTaskDelay(pdMS_TO_TICKS(1000));
@@ -87,3 +82,16 @@ void gpio_setup() {
 }
 
 void DoNothing(){}
+
+
+
+
+
+    // TCA9534_IO_EXP io_expWrite;
+    // io_expWrite.I2C_ADDR = 0x40;
+    // io_expWrite.i2c_master_port = I2C_NUM_0;
+    // TCA9534_IO_EXP io_expRead;
+    // io_expRead.I2C_ADDR = 0x41;
+    // io_expRead.i2c_master_port = I2C_NUM_0;
+
+    // set_all_tca9534_io_pins_direction(&io_expWrite, TCA9534_INPUT);

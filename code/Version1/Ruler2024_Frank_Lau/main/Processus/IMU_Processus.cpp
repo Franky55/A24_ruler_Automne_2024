@@ -5,8 +5,8 @@ void (*IMU_function)(void);
 //State: 0
 void InitializeIMUProcessus()
 {
-    //IMU_function = GetAllAxes;//For reading the data
-    IMU_function = DoNothing;//Do nothing
+    IMU_function = GetAllAxes;//For reading the data
+    //IMU_function = DoNothing;//Do nothing
 }
 
 //State: 1
