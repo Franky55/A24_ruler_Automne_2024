@@ -7,11 +7,11 @@
         "IDF_CCACHE_ENABLE": "1",
         "ESP_ROM_ELF_DIR": "C:\\Users\\gratt\\.espressif\\tools\\esp-rom-elfs\\20241011/"
     },
-    "idf.espIdfPathWin": "C:\\Users\\gratt\\esp\\master\\esp-idf",
+    "idf.espIdfPathWin": "C:\\Users\\gratt\\esp\\v5.3.2\\esp-idf",
     "idf.openOcdConfigs": [
         "board/esp32c3-ftdi.cfg"
     ],
-    "idf.portWin": "COM8",
+    "idf.portWin": "COM3",
     "idf.pythonBinPathWin": "C:\\Users\\gratt\\.espressif\\python_env\\idf5.5_py3.11_env\\Scripts\\python.exe",
     "idf.toolsPathWin": "C:\\Users\\gratt\\.espressif",
     "files.associations": {

@@ -20,8 +20,6 @@ IO_Expender::IO_Expender(int8_t Read_Address)
 
 esp_err_t IO_Expender::i2c_master_init() {
     i2c_config_t conf;
-    int i2c_master_port = I2C_MASTER_NUM;
-
     conf.mode = I2C_MODE_MASTER;
     conf.master.clk_speed = I2C_MASTER_FREQ_HZ;
     conf.sda_io_num = I2C_MASTER_SDA_IO;
@@ -37,6 +35,12 @@ void IO_Expender::set_pin_direction(TCA9534_PINS Pin, TCA9534_PORT_DIRECTION Dir
 {
     // Exemple de dir TCA9534_INPUT
     set_tca9534_io_pin_direction(&io_expWrite, Pin, Dir);
+}
+
+void IO_Expender::set_pin_direction(TCA9534_PORT_DIRECTION Dir)
+{
+    // Exemple de dir TCA9534_INPUT
+    set_all_tca9534_io_pins_direction(&io_expWrite, Dir);
 }
 
 int16_t IO_Expender::get_pin_status(TCA9534_PINS Pin)

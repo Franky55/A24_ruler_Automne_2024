@@ -1,12 +1,14 @@
 #include "IMU_Processus.h"
 
 void (*IMU_function)(void);
+IMU imu;
 
 //State: 0
 void InitializeIMUProcessus()
 {
-    IMU_function = GetAllAxes;//For reading the data
-    //IMU_function = DoNothing;//Do nothing
+    imu.Initialize();
+    //IMU_function = GetAllAxes;//For reading the data
+    IMU_function = DoNothing;//Do nothing
 }
 
 //State: 1

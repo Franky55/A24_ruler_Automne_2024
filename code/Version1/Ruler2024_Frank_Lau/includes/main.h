@@ -11,7 +11,6 @@
 #include "IO_Expender.h"
 
 //Global variables
-extern IMU imu;
 extern TimeBased timer;
 
 //Global Functions

@@ -11,34 +11,25 @@ void gpio_setup();
 long counter = 0;
 bool ledValue = false;
 
-IMU imu;
-
-
 extern "C" void app_main(void)
 {
-    
     TimeBased timer;
+    
     i2cdev_init();
     InitializeProcessus();
     gpio_setup();
 
     timer.addTask(&ControleLED);
     timer.addTask(IMU_function);
-    imu.Initialize();
+    // timer.addTask(Buttons_function);
+    
 
     
-    IO_Expender IO1(0x20);
-
-    IO1.i2c_master_init();
-
-    IO1.set_pin_direction(TCA9534_IO2, TCA9534_INPUT);
 
     while(1)
     {
         
-        int16_t allButtons = IO1.get_pin_status(TCA9534_IO2);
         
-        ESP_LOGI("IO extender", "all inputs: %d", allButtons);
         vTaskDelay(pdMS_TO_TICKS(1000));
         //vTaskDelay(1);
     }
