@@ -2,6 +2,8 @@
 
 void (*Buttons_function)(void);
 
+IO_Expender expender(0x20);
+
 //State: 0
 void InitializeButtons()
 {

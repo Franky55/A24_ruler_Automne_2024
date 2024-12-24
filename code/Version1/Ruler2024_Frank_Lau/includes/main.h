@@ -9,6 +9,8 @@
 #include "IMU_Processus.h"
 #include "TCA9534.h"
 #include "IO_Expender.h"
+#include "Button_Processus.h"
+#include "WebBrowser.h"
 
 //Global variables
 extern TimeBased timer;

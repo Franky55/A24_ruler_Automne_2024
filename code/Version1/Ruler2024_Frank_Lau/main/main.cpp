@@ -19,9 +19,13 @@ extern "C" void app_main(void)
     InitializeProcessus();
     gpio_setup();
 
+    ESP_ERROR_CHECK(nvs_flash_init());
+    wifi_init_softap();
+    start_webserver();
+
     timer.addTask(&ControleLED);
     timer.addTask(IMU_function);
-    // timer.addTask(Buttons_function);
+    timer.addTask(Buttons_function);
     
 
     
@@ -30,14 +34,15 @@ extern "C" void app_main(void)
     {
         
         
-        vTaskDelay(pdMS_TO_TICKS(1000));
-        //vTaskDelay(1);
+        // vTaskDelay(pdMS_TO_TICKS(1000));
+        vTaskDelay(1);
     }
 }
 
 void InitializeProcessus()
 {
     InitializeIMUProcessus();
+    InitializeButtons();
 }
 
 void ControleLED()

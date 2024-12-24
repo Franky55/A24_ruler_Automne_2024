@@ -12,8 +12,8 @@ extern void (*Buttons_function)(void);
 typedef enum {
     Button_Up = 1,
     Button_Right,
-    Button_Down,
     Button_Left,
+    Button_Down,
     Button_Center,
 } Buttons;
 
@@ -22,6 +22,6 @@ void InitializeButtons();
 void GetAllButtons();
 
 //variables
-IO_Expender expender(0x20);
+extern IO_Expender expender;
 
 #endif

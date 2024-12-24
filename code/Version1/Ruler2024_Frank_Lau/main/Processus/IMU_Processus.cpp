@@ -7,8 +7,8 @@ IMU imu;
 void InitializeIMUProcessus()
 {
     imu.Initialize();
-    //IMU_function = GetAllAxes;//For reading the data
-    IMU_function = DoNothing;//Do nothing
+    IMU_function = GetAllAxes;//For reading the data
+    //IMU_function = DoNothing;//Do nothing
 }
 
 //State: 1
