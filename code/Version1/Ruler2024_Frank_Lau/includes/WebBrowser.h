@@ -11,12 +11,15 @@
 #include "esp_http_server.h"
 #include "esp_mac.h" // For MAC2STR and MACSTR
 
-
 #define WIFI_SSID "ESP32-AP"
 #define WIFI_PASS "password123"
 #define MAX_STA_CONN 4
 
 void wifi_init_softap();
 httpd_handle_t start_webserver();
+void send_sse_update(int value1, int value2, int value3);
+
+extern httpd_req_t *Request;
+extern bool ClientConnected;
 
 #endif

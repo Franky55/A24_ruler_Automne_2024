@@ -10,8 +10,8 @@ void InitializeButtons()
     expender.i2c_master_init();
     expender.set_pin_direction(TCA9534_INPUT);
 
-    Buttons_function = GetAllButtons;//For reading the data
-    //Buttons_function = DoNothing;//Do nothing
+    // Buttons_function = GetAllButtons;//For reading the data
+    Buttons_function = DoNothing;//Do nothing
 }
 
 //State: 1

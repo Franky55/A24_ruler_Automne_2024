@@ -11,13 +11,14 @@ void InitializeIMUProcessus()
     //IMU_function = DoNothing;//Do nothing
 }
 
+
 //State: 1
 void GetAllAxes()
 {
     static long counterAxe = 0;
     counterAxe++;
 
-    if(counterAxe >= 1000)//1 fois seconde
+    if(counterAxe >= 100)//1 fois seconde
     {
         counterAxe =0;
         int16_t axe_X;
@@ -25,6 +26,8 @@ void GetAllAxes()
         int16_t axe_Z;
 
         imu.ReadAllAxes(&axe_X, &axe_Y, &axe_Z);
+        
+        send_sse_update(axe_X, axe_Y, axe_Z);
         ESP_LOGI("IMU", "Accel X: %d, Y: %d, Z: %d", axe_X, axe_Y, axe_Z);
     }
 }

@@ -53,21 +53,21 @@ void IMU::ReadAxe_X(int16_t *value)
 {   
     icm42670_read_raw_data(&dev, ICM42670_REG_ACCEL_DATA_X1, value);
 
-    ESP_LOGI("IMU", "Accel X: %d", *value);
+    // ESP_LOGI("IMU", "Accel X: %d", *value);
 }
 
 void IMU::ReadAxe_Y(int16_t *value)
 {   
     icm42670_read_raw_data(&dev, ICM42670_REG_ACCEL_DATA_Y1, value);
 
-    ESP_LOGI("IMU", "Accel Y: %d", *value);
+    // ESP_LOGI("IMU", "Accel Y: %d", *value);
 }
 
 void IMU::ReadAxe_Z(int16_t *value)
 {   
     icm42670_read_raw_data(&dev, ICM42670_REG_ACCEL_DATA_Z1, value);
 
-    ESP_LOGI("IMU", "Accel Z: %d", *value);
+    // ESP_LOGI("IMU", "Accel Z: %d", *value);
 }
 
 void IMU::ReadAllGyros(int16_t* gyro_x, int16_t* gyro_y, int16_t* gyro_z)
