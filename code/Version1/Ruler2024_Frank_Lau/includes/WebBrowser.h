@@ -17,7 +17,7 @@
 
 void wifi_init_softap();
 httpd_handle_t start_webserver();
-void send_sse_update(int value1, int value2, int value3);
+void send_sse_update(int value1, int value2);
 
 extern httpd_req_t *Request;
 extern bool ClientConnected;

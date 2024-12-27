@@ -137,14 +137,12 @@ static const char *HTML_PAGE =
     "<h1>Welcome to ESP32-C3 Web Server!</h1>"
     "<p>Value: <span id='value1'>0</span></p>"
     "<p>Value: <span id='value2'>0</span></p>"
-    "<p>Value: <span id='value3'>0</span></p>"
     "<script>"
     "const eventSource = new EventSource('/events');"
     "eventSource.onmessage = function(event) {"
     "   const values = event.data.split(\",\");"
     "    document.getElementById('value1').innerText = values[0];"
     "    document.getElementById('value2').innerText = values[1];"
-    "    document.getElementById('value3').innerText = values[2];"
     "};"
     "</script>"
     "</body>"
@@ -270,11 +268,11 @@ void wifi_init_softap(void) {
 
 
 
-void send_sse_update(int value1, int value2, int value3)
+void send_sse_update(int value1, int value2)
 {
     if (Request != NULL && ClientConnected) {
         char message[128];
-        snprintf(message, sizeof(message), "data: %d,%d,%d\n\n", value1, value2, value3);
+        snprintf(message, sizeof(message), "data: %d,%d\n\n", value1, value2);
 
         if (httpd_resp_send_chunk(Request, message, strlen(message)) != ESP_OK) {
             ESP_LOGW("SSE", "Failed to send update. Client might be disconnected.");
