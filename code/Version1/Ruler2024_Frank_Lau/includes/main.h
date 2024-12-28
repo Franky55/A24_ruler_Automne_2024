@@ -11,6 +11,13 @@
 #include "IO_Expender.h"
 #include "Button_Processus.h"
 #include "WebBrowser.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "driver/gpio.h"
+
+// #include "platform.h"
+#include "vl53l5cx_api.h"
+#include "vl53l5cx_plugin_xtalk.h"
 
 //Global variables
 extern TimeBased timer;
@@ -19,3 +26,7 @@ extern TimeBased timer;
 void DoNothing();
 
 #endif
+
+
+
+//vl53l5cx_set_i2c_address

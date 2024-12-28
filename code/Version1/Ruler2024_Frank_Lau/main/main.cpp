@@ -7,9 +7,11 @@
 void InitializeProcessus();
 void ControleLED();
 void gpio_setup();
+void SensorDistance();
 
 long counter = 0;
 bool ledValue = false;
+VL53L5CX_Configuration Dev; // Sensor configuration
 
 extern "C" void app_main(void)
 {
@@ -26,14 +28,47 @@ extern "C" void app_main(void)
     timer.addTask(&ControleLED);
     timer.addTask(IMU_function);
     timer.addTask(Buttons_function);
-    
 
+    ESP_LOGI("", "Distance sensor starting");
+
+    vTaskDelay(pdMS_TO_TICKS(500));
+    // SensorDistance();    
+
+    // uint8_t status, isReady;
     
+    // VL53L5CX_ResultsData Results; // Results data from VL53L5CX
+    // vl53l5cx_start_ranging(&Dev);
 
     while(1)
     {
-        
-        
+        // vl53l5cx_check_data_ready(&Dev, &isReady);
+
+        // ESP_LOGI("Polling", "isReady %d", isReady);
+
+        // if(isReady)
+        // {
+        //     vl53l5cx_get_ranging_data(&Dev, &Results);
+
+        //     /* As the sensor is set in 4x4 mode by default, we have a total
+        //      * of 16 zones to print. For this example, only the data of first zone are
+        //      * print */
+        //     ESP_LOGI("", "Print data no : %3u\n", Dev.streamcount);
+        //     for(int i = 0; i < 16; i++)
+        //     {
+        //         ESP_LOGI("", "Zone : %3d, Status : %3u, Distance : %4d mm\n",
+        //                i,
+        //                Results.target_status[VL53L5CX_NB_TARGET_PER_ZONE*i],
+        //                Results.distance_mm[VL53L5CX_NB_TARGET_PER_ZONE*i]);
+        //     }
+        //     ESP_LOGI("", "\n");
+        //     vTaskDelay(pdMS_TO_TICKS(1000));
+        // }
+
+        // /* Wait a few ms to avoid too high polling (function in platform
+        //  * file, not in API) */
+        // WaitMs(&(Dev.platform), 5);
+
+
         // vTaskDelay(pdMS_TO_TICKS(1000));
         vTaskDelay(1);
     }
@@ -79,15 +114,21 @@ void gpio_setup() {
 
 void DoNothing(){}
 
+void SensorDistance()
+{
+    uint8_t status, isAlive;
+    
+    VL53L5CX_ResultsData Results; // Results data from VL53L5CX
+    // Fill the platform structure with customer's implementation.
+    Dev.platform.address = VL53L5CX_DEFAULT_I2C_ADDRESS;
+    Dev.platform.port = I2C_NUM_0;
 
+    // Power on sensor and init
+    ESP_LOGI("", "Checking if chip is alive");
+    vTaskDelay(pdMS_TO_TICKS(5000));
+    status = vl53l5cx_is_alive(&Dev, &isAlive);
 
-
-
-    // TCA9534_IO_EXP io_expWrite;
-    // io_expWrite.I2C_ADDR = 0x40;
-    // io_expWrite.i2c_master_port = I2C_NUM_0;
-    // TCA9534_IO_EXP io_expRead;
-    // io_expRead.I2C_ADDR = 0x41;
-    // io_expRead.i2c_master_port = I2C_NUM_0;
-
-    // set_all_tca9534_io_pins_direction(&io_expWrite, TCA9534_INPUT);
+    // Init VL53L5CX sensor
+    status = vl53l5cx_init(&Dev);
+    ESP_LOGI("VL53L5CX", "VL53L5CX ULD ready! (Version: %s)", VL53L5CX_API_REVISION);
+}
