@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "ac5a0265-4afb-4946-9b01-fd2437bf19ed")
 	(paper "A4")
+	(title_block
+		(title "FONCTIONNALITÉS_RULER 2024")
+		(date "2024-12-27")
+		(rev "B")
+		(company "FRANK_LAU")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers hide)
@@ -2815,7 +2821,7 @@
 		)
 		(uuid "15be3149-b2b4-4e6f-b4bf-d7239508e643")
 	)
-	(text "ADRESSE: 0X64"
+	(text "ADRESSE: 0X20"
 		(exclude_from_sim no)
 		(at 248.412 86.36 0)
 		(effects

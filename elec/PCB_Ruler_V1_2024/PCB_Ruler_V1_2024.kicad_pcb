@@ -7,6 +7,12 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Ruler 2024")
+		(date "27 décembre 2024")
+		(rev "B")
+		(company "Frank_Lau")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(31 "B.Cu" signal)
@@ -28750,7 +28756,7 @@
 			(xy 102.045147 138.313234) (xy 145.816712 138.210912)
 		)
 		(height -19.313287)
-		(gr_text "1723.2946 mils"
+		(gr_text "43,7717 mm"
 			(at 123.295147 116.423234 0.133936448)
 			(layer "Cmts.User")
 			(uuid "f63468ea-ace0-413b-8d0e-082fa0df3541")

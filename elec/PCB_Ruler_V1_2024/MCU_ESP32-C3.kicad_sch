@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "411b76cb-1853-4b66-b0bc-e75501de4b0c")
 	(paper "A4")
+	(title_block
+		(title "MCU_RULER 2024")
+		(date "2024-12-27")
+		(rev "A")
+		(company "FRANK_LAU")
+	)
 	(lib_symbols
 		(symbol "CS1213AGF260:CS1213AGF260"
 			(pin_names
@@ -3218,7 +3224,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 168.91) (xy 36.83 171.45)
+			(xy 53.34 133.35) (xy 53.34 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3328,7 +3334,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 179.07) (xy 36.83 181.61)
+			(xy 53.34 143.51) (xy 53.34 146.05)
 		)
 		(stroke
 			(width 0)
@@ -4378,7 +4384,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 36.83 181.61 0)
+		(at 53.34 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4387,7 +4393,7 @@
 		(fields_autoplaced yes)
 		(uuid "12780c43-6228-45d9-8f72-6ed7e50f3a6b")
 		(property "Reference" "#PWR016"
-			(at 36.83 187.96 0)
+			(at 53.34 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4396,7 +4402,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 186.69 0)
+			(at 53.34 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4404,7 +4410,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 181.61 0)
+			(at 53.34 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4413,7 +4419,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 181.61 0)
+			(at 53.34 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4422,7 +4428,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 181.61 0)
+			(at 53.34 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5976,7 +5982,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 36.83 168.91 0)
+		(at 53.34 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5985,7 +5991,7 @@
 		(fields_autoplaced yes)
 		(uuid "d25754bc-e641-4a2e-8da9-14c4b3044c23")
 		(property "Reference" "#PWR015"
-			(at 36.83 172.72 0)
+			(at 53.34 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5994,7 +6000,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 36.83 163.83 0)
+			(at 53.34 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6002,7 +6008,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 168.91 0)
+			(at 53.34 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6011,7 +6017,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 168.91 0)
+			(at 53.34 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6020,7 +6026,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 36.83 168.91 0)
+			(at 53.34 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6537,7 +6543,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 36.83 175.26 0)
+		(at 53.34 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6546,7 +6552,7 @@
 		(fields_autoplaced yes)
 		(uuid "ff380182-8e93-488e-b20b-56f34a76dfe5")
 		(property "Reference" "C2"
-			(at 40.64 173.9899 0)
+			(at 57.15 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6555,7 +6561,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 40.64 176.5299 0)
+			(at 57.15 140.9699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6564,7 +6570,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 37.7952 179.07 0)
+			(at 54.3052 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6573,7 +6579,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 175.26 0)
+			(at 53.34 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6582,7 +6588,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 36.83 175.26 0)
+			(at 53.34 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)

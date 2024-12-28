@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "bc7ede68-612d-433f-943d-4b6a4b3eb8f7")
 	(paper "A4")
+	(title_block
+		(title "POWER_RULER 2024")
+		(date "2024-12-27")
+		(rev "A")
+		(company "FRANK_LAU")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers hide)
