@@ -10,6 +10,7 @@ extern void (*Buttons_function)(void);
 
 
 typedef enum {
+    XShut = 0,
     Button_Up = 1,
     Button_Right,
     Button_Left,

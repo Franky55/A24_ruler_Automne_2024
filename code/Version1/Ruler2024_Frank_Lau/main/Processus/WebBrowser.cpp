@@ -130,23 +130,42 @@ bool ClientConnected;
 
 /* HTML content for the webpage */
 static const char *HTML_PAGE = 
-    "<!DOCTYPE html>"
-    "<html>"
-    "<head><title>ESP32 Web Server</title></head>"
-    "<body>"
-    "<h1>Welcome to ESP32-C3 Web Server!</h1>"
-    "<p>Value: <span id='value1'>0</span></p>"
-    "<p>Value: <span id='value2'>0</span></p>"
-    "<script>"
-    "const eventSource = new EventSource('/events');"
-    "eventSource.onmessage = function(event) {"
-    "   const values = event.data.split(\",\");"
-    "    document.getElementById('value1').innerText = values[0];"
-    "    document.getElementById('value2').innerText = values[1];"
-    "};"
-    "</script>"
-    "</body>"
-    "</html>";
+ "<!DOCTYPE html>"
+"<html>"
+"<head>"
+"<title>Ruler Lau and Frank</title>"
+"<style>"
+"  #ruler {"
+"    width: 200px;"
+"    height: 10px;"
+"    background-color: blue;"
+"    position: absolute;"
+"    top: 50%;"
+"    left: 50%;"
+"    transform-origin: center;"
+"    transform: rotate(0deg);"
+"  }"
+"</style>"
+"</head>"
+"<body>"
+"<h1>Ruler Lau and Frank!</h1>"
+"<p>Angle Y: <span id='value1'>0</span></p>"
+"<p>Angle Z: <span id='value2'>0</span></p>"
+"<div id='ruler'></div>"
+"<script>"
+"const eventSource = new EventSource('/events');"
+"eventSource.onmessage = function(event) {"
+"    const values = event.data.split(\",\");"
+"    const angleY = parseFloat(values[0]);"
+"    document.getElementById('value1').innerText = angleY;"
+"    document.getElementById('value2').innerText = values[1];"
+"    const ruler = document.getElementById('ruler');"
+"    ruler.style.transform = `rotate(${angleY}deg)`;"
+"};"
+"</script>"
+"</body>"
+"</html>";
+
 
 /* HTTP GET handler */
 esp_err_t get_handler(httpd_req_t *req) {
@@ -233,9 +252,9 @@ void wifi_init_softap(void) {
 
     wifi_config_t wifi_config = {
     .ap = {
-        .ssid = "ESP32-AP",
-        .password = "password123",
-        .ssid_len = strlen("ESP32-AP"), // Optional, can be 0 if SSID is null-terminated
+        .ssid = WIFI_SSID,
+        .password = WIFI_PASS,
+        .ssid_len = strlen(WIFI_SSID), // Optional, can be 0 if SSID is null-terminated
         .channel = 1,
         .authmode = WIFI_AUTH_WPA_WPA2_PSK,
         .ssid_hidden = 0,
@@ -268,11 +287,11 @@ void wifi_init_softap(void) {
 
 
 
-void send_sse_update(int value1, int value2)
+void send_sse_update(float value1, float value2)
 {
     if (Request != NULL && ClientConnected) {
         char message[128];
-        snprintf(message, sizeof(message), "data: %d,%d\n\n", value1, value2);
+        snprintf(message, sizeof(message), "data: %.2f,%.2f\n\n", value1, value2);
 
         if (httpd_resp_send_chunk(Request, message, strlen(message)) != ESP_OK) {
             ESP_LOGW("SSE", "Failed to send update. Client might be disconnected.");

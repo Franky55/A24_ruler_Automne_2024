@@ -19,7 +19,9 @@
         "freertos.h": "c",
         "task.h": "c",
         "esp_log.h": "c",
-        "gpio.h": "c"
+        "gpio.h": "c",
+        "vl53l5cx_api.h": "c",
+        "system_error": "cpp"
     },
     "idf.flashType": "UART"
 }
